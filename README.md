@@ -3,6 +3,10 @@
 
 paper link: https://arxiv.org/pdf/2505.18777
 
+## Abstract
+
+Existing parameter-efficient fine-tuning (PEFT) methods for large language models (LLMs), such as LoRA and PiSSA, constrain model updates to low-rank subspaces, limiting their expressiveness and leading to suboptimal performance on complex tasks. To address this, we introduce **H**igh-rank **D**istributed **PiSSA (HD-PiSSA)**, a distributed PEFT approach that initializes orthogonal adapters across different devices and aggregates their delta updates collectively on W for fine-tuning. Unlike Data Parallel LoRA or PiSSA, which maintain identical adapters across all devices, HD-PiSSA assigns different principal components of the pre-trained weights to each GPU, significantly expanding the range of update directions. This results in over **16x higher effective updated ranks** than data-parallel LoRA or PiSSA when fine-tuning on 8 GPUs with the same per-device adapter rank. Empirically, we evaluate HD-PiSSA across various challenging downstream tasks, including mathematics, code generation, and multi-task learning. In the multi-task setting, HD-PiSSA achieves average gains of **10.0** absolute points **(14.63%)** over LoRA and **4.98** points **(6.60%)** over PiSSA across 12 benchmarks, demonstrating its benefits from the extra optimization flexibility.
+
 ## Getting Started
 
 1. Clone HD-PiSSA:
