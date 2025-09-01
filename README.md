@@ -20,3 +20,28 @@ conda create -n hdpissa python==3.11
 conda activate hdpissa
 pip install -r requirements.txt  --no-deps
 ```
+
+## Usage
+1. Set the configuration in ```run.sh```
+2. Set your desired prompt template in ```hd_pissa.py```:
+```
+PROMPT = (
+    "Below is an instruction that describes a task. "
+    "Write a response that appropriately completes the request.\n\n"
+    "### Instruction:\n{instruction}\n\n### Response:"
+)
+```
+3. Run the experiment.
+```bash
+bash run.sh
+```
+
+## Citation
+```bibtex
+@article{wang2025hd,
+  title={HD-PiSSA: High-Rank Distributed Orthogonal Adaptation},
+  author={Wang, Yiding and Meng, Fauxu and Zhang, Xuefeng and Jiang, Fan and Tang, Pingzhi and Zhang, Muhan},
+  journal={arXiv preprint arXiv:2505.18777},
+  year={2025}
+}
+```
