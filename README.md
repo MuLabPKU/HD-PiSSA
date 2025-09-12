@@ -36,6 +36,9 @@ PROMPT = (
 ```bash
 bash run.sh
 ```
+## Evaluation
+
+The results reported in our paper are evaluated based on ![PiSSA's evaluation code base](https://github.com/GraphPKU/PiSSA).
 
 ## Citation
 ```bibtex
