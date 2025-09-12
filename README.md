@@ -37,7 +37,7 @@ PROMPT = (
 bash run.sh
 ```
 
-⚠️ Note
+⚠️ Note  
 Training might be slow, because we use a float32 base model by default, and our parallel code isn't fully optimized yet.
 
 ## Evaluation
