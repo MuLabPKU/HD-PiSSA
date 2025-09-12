@@ -36,9 +36,14 @@ PROMPT = (
 ```bash
 bash run.sh
 ```
+
+⚠️ Note
+Training might be slow, because we use a float32 base model by default, and our parallel code isn't fully optimized yet.
+
 ## Evaluation
 
 The results reported in our paper are evaluated based on ![PiSSA's evaluation code base](https://github.com/GraphPKU/PiSSA).
+
 
 ## Citation
 ```bibtex
